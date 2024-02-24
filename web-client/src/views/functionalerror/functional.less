@@ -1,0 +1,175 @@
+.functional{
+    display: grid;
+    justify-content: right;
+    background-color: #f0f2f5;
+    height: 100%;
+    text-align: center;
+    .left{
+      height: 100%;
+      background: url('../../assets/images/404.png') no-repeat center;
+    }
+    .right{
+      padding-left: 50px;
+      height: 100%;
+      div{
+        margin-top: 50px;
+      }
+    }
+    h1{
+      font-size: 16px;
+      display: inline-block;
+      padding-right: 12px;
+      animation: type .5s alternate infinite;
+    }
+  
+  
+    .error-icon{
+      width: 600px;
+      #holder {
+        position: relative;
+        width: 100%;
+        margin-top: 350px;
+        // top: calc(45%);
+        // left: calc(45%);
+      }
+      
+      #box {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 15px;
+        background: #011a31;
+        // opacity: 0.6;
+        border-radius: 10%;
+        animation-name:  box;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes rotate-box {
+        100% {
+         transform: rotate(25deg);
+        }
+      }
+      
+      @keyframes box {
+        50% {
+          transform: translateY(-80%);
+        }
+      }
+      
+      
+      #shadow { 
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        margin-left: 50;
+        background: black;
+        opacity: 0.1;
+        border-radius: 50%;
+        animation: shadow .8s linear infinite;
+      }
+      @keyframes shadow {
+        50% {
+          transform: scale(0.8,1.2);
+        }
+      }
+      
+  
+    }
+}
+
+
+
+@media all and (max-width: 630px){
+  .functional{
+    display: grid;
+    justify-content: center;
+    background-color: #f0f2f5;
+    height: 100%;
+    text-align: center;
+    .left{
+      height: 100%;
+      background: url('../../assets/images/404.png') no-repeat center;
+    }
+    .right{
+      padding-left: 50px;
+      height: 100%;
+      div{
+        margin-top: 50px;
+      }
+    }
+    h1{
+      font-size: 16px;
+      display: inline-block;
+      padding-right: 12px;
+      animation: type .5s alternate infinite;
+    }
+  
+  
+    .error-icon{
+      width: 600px;
+      #holder {
+        position: relative;
+        width: 100%;
+        margin-top: 270px;
+        // top: calc(45%);
+        // left: calc(45%);
+      }
+      
+      #box {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 15px;
+        background: #011a31;
+        // opacity: 0.6;
+        border-radius: 10%;
+        animation-name:  box;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes rotate-box {
+        100% {
+         transform: rotate(25deg);
+        }
+      }
+      
+      @keyframes box {
+        50% {
+          transform: translateY(-80%);
+        }
+      }
+      
+      #shadow > h1 {
+        font-size: 13px;
+        margin-left: 12% !important;
+      }
+      
+      #shadow { 
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        margin-left: 50;
+        background: black;
+        opacity: 0.1;
+        border-radius: 50%;
+        animation: shadow .8s linear infinite;
+      }
+      @keyframes shadow {
+        50% {
+          transform: scale(0.8,1.2);
+        }
+      }
+      
+  
+    }
+}
+
+
+}

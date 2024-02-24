@@ -1,0 +1,169 @@
+.not-found{
+  background-color: #f0f2f5;
+  height: 100%;
+  text-align: center;
+  display: grid;
+
+  .left{
+    height: 100%;
+    background: url('../../assets/images/404.png') no-repeat center;
+  }
+  .right{
+    padding-left: 50px;
+    height: 100%;
+    div{
+      margin-top: 50px;
+    }
+  }
+  h1{
+    font-size: 14px !important;
+    display: inline-block;
+    padding-right: 12px;
+    animation: type .5s alternate infinite;
+  }
+
+
+  .error-icon{
+    margin-left: 54% !important;
+    width: 650px;
+    height: 90px;
+    margin-top: 350px !important;
+
+    #holder {
+      width: 43%;
+      display: contents;
+      margin-top: 15%;
+      // top: calc(45%);
+      // left: calc(45%);
+    }
+    
+    #box2 {
+      width: 40px;
+      height: 40px;
+      left: 15px;
+      background: #011a31;
+      // opacity: 0.6;
+      border-radius: 10%;
+      animation-name:  box;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+  }
+}
+
+
+
+@media all and (max-width: 1457px){
+  .not-found{
+    .error-icon{
+      margin-left: 46% !important;
+      margin-top: 350px !important;
+    }
+  }
+  
+}
+
+
+
+@media all and (max-width: 1242px){
+  .not-found{
+    .error-icon{
+      margin-left: 0px !important;
+      margin-top: 23% !important;
+
+      #holder {
+        width: 100%;
+        justify-content: center;
+        display: flex !important;
+        margin-top: 15%;
+        // top: calc(45%);
+        // left: calc(45%);
+
+        
+      }
+    }
+
+    #holder > h1 {
+      font-size: 12px !important;
+    }
+   
+
+    .ant-btn{
+      font-size: 12px !important;
+    }
+  }
+
+
+  
+}
+
+
+@media all and (max-width: 563px){
+  .not-found{
+    .error-icon{
+      margin-left: 0px !important;
+      margin-top: 23% !important;
+      width: 100% !important;
+
+      #holder {
+        width: 100%;
+        justify-content: center;
+        display: flex !important;
+        margin-top: 15%;
+        // top: calc(45%);
+        // left: calc(45%);
+
+        
+      }
+    }
+
+    #holder > h1 {
+      font-size: 12px !important;
+      margin-left: 0% !important;
+    }
+   
+
+    .ant-btn{
+      font-size: 12px !important;
+    }
+  }
+
+
+  
+}
+
+
+@media all and (max-width: 450px){
+  .not-found{
+    .error-icon{
+      margin-left: 0px !important;
+      margin-top: 44% !important;
+      width: 100% !important;
+
+      #holder {
+        width: 100%;
+        justify-content: center;
+        display: flex !important;
+        margin-top: 15%;
+        // top: calc(45%);
+        // left: calc(45%);
+
+        
+      }
+    }
+
+    #holder > h1 {
+      font-size: 12px !important;
+      margin-left: 0% !important;
+    }
+   
+
+    .ant-btn{
+      font-size: 12px !important;
+    }
+  }
+
+
+  
+}

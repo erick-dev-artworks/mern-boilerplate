@@ -1,0 +1,38 @@
+{
+  "name": "react-admin-server",
+  "version": "1.0.0",
+  "description": "react-admin server project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js -max_old_space_size=4096",
+    "pm2-dev": "pm2 start npm --name shc-server-development -- run start",
+    "pm2-dev-delete": "pm2 delete shc-server-development",
+    "pm2-prod": "pm2 start npm --name shc-server-production -- run start",
+    "pm2-prod-delete": "pm2 delete shc-server-production"
+  },
+  "author": "pubdreamcc (493310907@qq.com)",
+  "license": "ISC",
+  "dependencies": {
+    "appmetrics-dash": "^5.3.0",
+    "authenticator": "^1.1.5",
+    "authy-client": "^1.1.4",
+    "autocannon": "^7.5.0",
+    "blueimp-md5": "^2.10.0",
+    "body-parser": "^1.19.0",
+    "bson": "^4.7.0",
+    "cluster": "^0.7.7",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "mongoose": "^5.6.4",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.6.5",
+    "request": "^2.88.2",
+    "totp-generator": "0.0.9"
+  }
+}
